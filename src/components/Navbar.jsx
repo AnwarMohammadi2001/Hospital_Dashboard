@@ -14,7 +14,7 @@ const Navbar = () => {
         <input
           type="text"
           placeholder="Search anything..."
-          className="bg-gray-200 outline-none placeholder:text-gray-500  text-gray-600 px-10 py-2 rounded-lg w-full"
+          className="bg-gray-100 outline-none placeholder:text-gray-500  text-gray-600 px-10 py-2 rounded-lg w-full"
         />
         <FaSearch
           className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"
@@ -26,7 +26,7 @@ const Navbar = () => {
       <div className="flex items-center gap-6">
         {/* Notification Icon */}
         <button className="relative">
-          <FaBell size={22} className="text-indigo-500" />
+          <FaBell size={22} className="text-violet-600" />
         </button>
 
         {/* User Profile with Dropdown */}
@@ -36,7 +36,7 @@ const Navbar = () => {
             onClick={() => setShowDropdown(!showDropdown)}
           >
            <div className="border  rounded-full border-violet-400 p-1">
-           <FaUser className="text-violet-500 " size={20} />
+           <FaUser className="text-violet-600 " size={20} />
            </div>
             <span className="text-gray-500 font-bold">{selectedUser}</span>
             <div className="flex items-center text-gray-600  gap-x-2">
