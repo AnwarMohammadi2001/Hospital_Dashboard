@@ -34,12 +34,12 @@ const OverView = () => {
     },
   ];
   return (
-    <div className="px-8 py-2 ">
+    <div className="px-8 py-2 2xl:py-8 ">
       <div className=" grid grid-cols-4 gap-x-8">
         {overviewdata.map((item, index) => (
           <div
             key={index}
-            className=" h-[100px] bg-white shadow-md rounded-lg px-6 py-4 flex justify-between items-center"
+            className=" h-[100px] xl:h-[120px] bg-white shadow-md rounded-lg px-6 py-4 flex justify-between items-center"
           >
             <div className="flex items-center justify-center gap-x-6">
               <span className="p-3 rounded-full bg-gray-200">{item.icon}</span>
@@ -55,7 +55,7 @@ const OverView = () => {
         ))}
       </div>
       <div className="mt-5 grid grid-cols-4 gap-x-8 ">
-        <div className="col-span-3  h-64 bg-white shadow-md rounded-lg px-6 py-4">
+        <div className="col-span-3  h-64 xl:h-80 bg-white shadow-md rounded-lg px-6 py-4">
           <header className="h-10 w-full flex items-center justify-between ">
             <h1 className="font-bold text-lg">
               OutPatients vs, Inspatients Trend
@@ -63,16 +63,16 @@ const OverView = () => {
             <span className="text-sm font-semibold flex items-center gap-x-3">
               show by months <FaChevronDown size={10} />{" "}
             </span>
-          </header>
+          </header><div></div>
         </div>
-        <div className="col-span-1  h-64 bg-white shadow-md rounded-lg px-6 py-4">
+        <div className="col-span-1  h-64 xl:h-80 bg-white shadow-md rounded-lg px-6 py-4">
           <header className="h-10 w-full flex items-center justify-center ">
             <h1 className="font-bold text-lg">Patients by Gender</h1>
           </header>
         </div>
       </div>
       <div className="mt-5 grid grid-cols-4 gap-x-8 ">
-        <div className="col-span-2  h-60 bg-white shadow-md rounded-lg px-6 py-4">
+        <div className="col-span-2  h-60 xl:h-72 bg-white shadow-md rounded-lg px-6 py-4">
           <header className="h-10 w-full flex items-center justify-between ">
             <h1 className="font-bold text-lg">Time Admitted</h1>
             <span className="text-sm font-semibold flex items-center gap-x-3">
@@ -80,7 +80,7 @@ const OverView = () => {
             </span>
           </header>
         </div>
-        <div className="col-span-1  h-60 bg-white shadow-md rounded-lg px-6 py-4">
+        <div className="col-span-1  h-60 xl:h-72 bg-white shadow-md rounded-lg px-6 py-4">
           <header className="h-10 w-full flex items-center justify-between ">
             <h1 className="font-bold text-lg">Patients By Division</h1>
             <span className="text-sm font-semibold flex items-center gap-x-3">
@@ -130,7 +130,7 @@ const OverView = () => {
             </ul>
           </div>
         </div>
-        <div className="col-span-1  h-60 bg-white shadow-md rounded-lg px-6 py-4"></div>
+        <div className="col-span-1  h-60 xl:h-72 bg-white shadow-md rounded-lg px-6 py-4"></div>
       </div>
     </div>
   );
